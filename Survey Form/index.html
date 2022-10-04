@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Survey Form</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Dogs From the World</h1>
+      <p id="description">
+        This is my survey form to collect data from your dogs!
+      </p>
+    </div>
+    <div>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name"
+            >Name:
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your dog's name"
+              required
+          /></label>
+          <label id="email-label" for="email"
+            >E-mail address:
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your dog's e-mail (or the owner's)"
+              required
+          /></label>
+          <label id="number-label" for="age"
+            >Age:
+            <input
+              id="number"
+              type="number"
+              placeholder="Enter your dog's age"
+              min="0"
+              max="30"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label id="dropdown-label" for="dropdown"
+            >What is your dog's breed?
+            <select id="dropdown" for="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Golden Retriever</option>
+              <option value="2">Labrador</option>
+              <option value="3">French Bulldog</option>
+              <option value="4">Beagle</option>
+              <option value="5">French Bulldog</option>
+              <option value="6">German Shepherd</option>
+              <option value="7">Poodle</option>
+              <option value="8">Bulldog</option>
+              <option value="9">Dachshund</option>
+              <option value="10">Other</option>
+            </select>
+          </label>
+          <label for="male"
+            ><input id="male" type="radio" name="sex" value="1" class="inline" />
+            Male</label
+          >
+          <label for="female"
+            ><input id="female" type="radio" name="sex" value="2" class="inline" />
+            Female</label
+          >
+        </fieldset>
+        <fieldset>
+          <p class="likes">Does your dog like any of these hobbies?</p>
+          <label for="likes">
+            <input id="likes" type="checkbox" value="1" class="inline" />
+            Giving kisses</label
+          >
+          <label for="likes">
+            <input id="likes" type="checkbox" value="2" class="inline" />
+            Chasing</label
+          >
+          <label for="likes">
+            <input id="likes" type="checkbox" value="3" class="inline" />
+            Eating</label
+          >
+          <label for="likes">
+            <input id="likes" type="checkbox" value="4" class="inline" />
+            Walking</label
+          >
+          <label for="likes">
+            <input id="likes" type="checkbox" value="5" class="inline" />
+            Playing fetch</label
+          >
+          <label for="dislikes" class="dislikes"
+            >Do they dislike something? Write about it:</label
+          >
+          <textarea
+            id="dislikes"
+            placeholder="They dislike baths..."
+            rows="3"
+          ></textarea>
+        </fieldset>
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
