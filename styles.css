@@ -1,16 +1,21 @@
 body {
-    background-color: #FFF8EA;
-    padding: 5%;
+  background-color: #fff8ea;
+  padding: 5%;
 }
 
 h1 {
-    color: #594545;
+  color: #594545;
+  margin-bottom: 40px;
 }
 
 h2 {
-    color: #594545;
+  color: #594545;
+}
+
+ul {
+  margin-bottom: 40px;
 }
 
 li {
-    margin-top: 10px;
+  margin-top: 10px;
 }
